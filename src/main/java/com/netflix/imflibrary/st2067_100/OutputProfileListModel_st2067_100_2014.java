@@ -1,9 +1,9 @@
 package com.netflix.imflibrary.st2067_100;
 
 import com.netflix.imflibrary.IMFErrorLogger;
-import com.netflix.imflibrary.st2067_100.macro.audioRoutingMixing.AudioRoutingMixingMacro;
-import com.netflix.imflibrary.st2067_100.macro.audioRoutingMixing.InputEntity;
-import com.netflix.imflibrary.st2067_100.macro.audioRoutingMixing.OutputAudioChannel;
+import com.netflix.imflibrary.st2067_100.macro.AudioRoutingMixing.AudioRoutingMixingMacro;
+import com.netflix.imflibrary.st2067_100.macro.AudioRoutingMixing.InputEntity;
+import com.netflix.imflibrary.st2067_100.macro.AudioRoutingMixing.OutputAudioChannel;
 import com.netflix.imflibrary.st2067_100.macro.ColorEncoding;
 import com.netflix.imflibrary.st2067_100.macro.Macro;
 import com.netflix.imflibrary.st2067_100.macro.crop.CropInputImageSequence;
@@ -226,22 +226,22 @@ class OutputProfileListModel_st2067_100_2014 {
                 input, output);
     }
 
-    private AudioRoutingMixingMacro createAudioRoutingMixingMacro(AudioRoutingMixingMacroType audioRoutingMixingMacroType) {
-        if(audioRoutingMixingMacroType.getOutputEntityList() == null) {
+    private AudioRoutingMixingMacro createAudioRoutingMixingMacro(AudioRoutingMixingMacroType AudioRoutingMixingMacroType) {
+        if(AudioRoutingMixingMacroType.getOutputEntityList() == null) {
             this.imfErrorLogger.addError(IMFErrorLogger.IMFErrors.ErrorCodes.IMF_OPL_ERROR, IMFErrorLogger.IMFErrors.ErrorLevels.NON_FATAL,
-                    String.format("Missing OutputEntityList in %s macro", audioRoutingMixingMacroType.getName()));
+                    String.format("Missing OutputEntityList in %s macro", AudioRoutingMixingMacroType.getName()));
         }
 
-        AudioRoutingMixingMacroType.OutputEntityList outputEntityList = audioRoutingMixingMacroType.getOutputEntityList();
+        AudioRoutingMixingMacroType.OutputEntityList outputEntityList = AudioRoutingMixingMacroType.getOutputEntityList();
         List<OutputAudioChannel> outputAudioChannels = new ArrayList<>();
         for(OutputAudioChannelType outputAudioChannelType: outputEntityList.getOutputAudioChannel()) {
             List<InputEntity> inputEntityList = outputAudioChannelType.getInputEntityList().getInputEntity().stream().map(e -> new InputEntity( "", e.getHandle(), e.getGain())).collect(Collectors.toList());
             outputAudioChannels.add(new OutputAudioChannel( outputAudioChannelType.getAnnotation() != null ? outputAudioChannelType.getAnnotation().getValue() : null,
-                    "macros/" + audioRoutingMixingMacroType.getName() + "/outputs/" + outputAudioChannelType.getHandle(), inputEntityList));
+                    "macros/" + AudioRoutingMixingMacroType.getName() + "/outputs/" + outputAudioChannelType.getHandle(), inputEntityList));
         }
 
-        return new AudioRoutingMixingMacro(audioRoutingMixingMacroType.getName(),
-                audioRoutingMixingMacroType.getAnnotation() != null ? audioRoutingMixingMacroType.getAnnotation().getValue() : null,
+        return new AudioRoutingMixingMacro(AudioRoutingMixingMacroType.getName(),
+                AudioRoutingMixingMacroType.getAnnotation() != null ? AudioRoutingMixingMacroType.getAnnotation().getValue() : null,
                 outputAudioChannels);
     }
 
