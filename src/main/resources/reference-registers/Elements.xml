@@ -1,25 +1,28 @@
-<!-- ************************************* -->
-<!-- ************************************* -->
-<!-- ************************************* -->
-<!-- *****DO NOT EDIT THIS XML FILE******* -->
-<!-- ************************************* -->
-<!-- ************************************* -->
-<!-- ************************************* -->
-<!--  -->
-<!-- DEVELOPMENT REGISTER -->
-<!--  -->
-<!-- SMPTE METADATA REGISTER -->
-<!-- ####################### -->
-<!--  -->
-<!-- See https://registry.smpte-ra.org for SMPTE Metadata Registers resources including copies of the  -->
-<!-- SMPTE Metadata Registers that are suitable for editing. -->
-<!--  -->
-<!-- Contact -->
-<!-- ####### -->
-<!--  -->
-<!-- Please email:  30mr10wg-def@lists.smpte.org -->
-<!--  -->
-<!--  -->
+<!-- DO NOT EDIT THIS TAG -->
+<!-- master_commit_tag=v000000082 -->
+<!-- DO NOT EDIT THIS TAG -->
+<!--
+Copyright (c) 2021 SMPTE All rights reserved.
+
+The latest version of this document can be retrieved at
+
+http://smpte-ra.org/smpte-metadata-registry
+
+The document is constructed according to 
+
+ST 335:2012  -  Metadata Element Dictionary Structure,
+
+which is available at http://dx.doi.org/10.5594/SMPTE.ST335.2012
+
+Use of this file without consulting the corresponding SMPTE Engineering Document is NOT supported.  Interoperability will generally require adherence to additional guidelines and constraints specified in the corresponding prose document.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
 <ElementsRegister xmlns="http://www.smpte-ra.org/schemas/335/2012">
   <Entries>
     <Entry>
@@ -9506,7 +9509,7 @@
       <Kind>LEAF</Kind>
       <Name>MCA Audio Content Kind</Name>
       <Definition>The MCA Audio Content Kind item shall indicate the kind of content contained in the audio essence as described in SMPTE RP 428-4.</Definition>
-      <IsDeprecated>true</IsDeprecated>
+      <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
       <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
       <ValueLength>Variable</ValueLength>
@@ -9519,107 +9522,9 @@
       <Kind>LEAF</Kind>
       <Name>MCA Audio Element Kind</Name>
       <Definition>The MCA Audio Element Kind item shall indicate the kind of audio element contained in the audio essence as described in SMPTE RP 428-4.</Definition>
-      <IsDeprecated>true</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCAContent</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.22000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Content</Name>
-      <Definition>Unique value that identifies the content contained in the audio essence</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
       <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCAUseClass</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.23000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Use Class</Name>
-      <Definition>Unique value that identifies the class of the audio essence with respect to its completeness and usability</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCAContentSubtype</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.24000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Content Subtype</Name>
-      <Definition>Supplemental modifier to MCA Content</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCAContentDifferentiator</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.25000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Content Differentiator</Name>
-      <Definition>Label that distinguishes between audio that otherwise has the same MCALabelSubDescriptor values</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCASpokenLanguageAttribute</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.26000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Spoken Language Attribute</Name>
-      <Definition>Depiction of whether the RFC 5646 Spoken Language is the original language or a dubbed language</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100400.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>RFC5646AdditionalSpokenLanguages</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.27000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>RFC 5646 Additional Spoken Languages</Name>
-      <Definition>List of RFC 5646 Spoken Language tags depicting spoken languages in addition to the primary spoken language</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100400.00000000</Type>
-      <ValueLength>Variable</ValueLength>
-    </Entry>
-    <Entry>
-      <Register>Elements</Register>
-      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
-      <Symbol>MCAAdditionalLanguageAttributes</Symbol>
-      <UL>urn:smpte:ul:060e2b34.0101010e.03020102.28000000</UL>
-      <Kind>LEAF</Kind>
-      <Name>MCA Additional Language Attributes</Name>
-      <Definition>Indication of whether each RFC 5646 language tag in MCA Additional Languages references original audio or dubbed audio</Definition>
-      <DefiningDocument>SMPTE ST 377-4</DefiningDocument>
-      <IsDeprecated>false</IsDeprecated>
-      <ContextScope>UnknownContext</ContextScope>
-      <Type>urn:smpte:ul:060e2b34.01040101.01100400.00000000</Type>
       <ValueLength>Variable</ValueLength>
     </Entry>
     <Entry>
@@ -13308,6 +13213,48 @@
     <Entry>
       <Register>Elements</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>J2KExtendedCapabilities</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010603.0f000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>J2K Extended Capabilities</Name>
+      <Definition>Signals that extended capabilities were used to create (and are recommended or required to decode) a codestream. The value is a record that comprises the Pcap parameter followed by an array of consisting of the Ccap(i) parameters of the CAP Marker Segment, as specified in ISO/IEC 15444-1.</Definition>
+      <DefiningDocument>SMPTE ST 422</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.03010d00.00000000</Type>
+      <ValueLength>variable</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>J2KProfile</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010603.10000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>J2K Profile</Name>
+      <Definition>Signals the profile to which the codestream conforms. Profiles provide limits on the codestream syntax parameters. The value comprises an array of the Pprf(i) parameters of the PRF Marker Segment, as specified in ISO/IEC 15444-1.</Definition>
+      <DefiningDocument>SMPTE ST 422</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.04011200.00000000</Type>
+      <ValueLength>variable</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>J2KCorrespondingProfile</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010603.11000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>J2K Corresponding Profile</Name>
+      <Definition>Facilitate the reversible transcoding of HTJ2K codestreams, as specified in ISO/IEC 15444-15, to and from codestreams that conform to Rec. ISO/IEC 15444-1. The value comprises an array of the Pcpf(i) parameters of the CPF Marker Segment, as specified in ISO/IEC 15444-15.</Definition>
+      <DefiningDocument>SMPTE ST 422</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.04011200.00000000</Type>
+      <ValueLength>variable</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
       <Symbol>VC1PictureEssenceDescriptors</Symbol>
       <UL>urn:smpte:ul:060e2b34.0101010c.04010604.00000000</UL>
       <Kind>NODE</Kind>
@@ -13778,6 +13725,352 @@
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
       <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCParameters</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02000000</UL>
+      <Kind>NODE</Kind>
+      <Name>HEVC Parameters</Name>
+      <Definition>Parameters about HEVC Picture Coding</Definition>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCConstantBPictureFlag</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02030000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Constant B Picture Flag</Name>
+      <Definition>TRUE if the number of B Pictures is always constant</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01040100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCCodedContentKind</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02040000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Coded Content Kind</Name>
+      <Definition>Enumerated value specifying Picture type and Coding type</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.02010133.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCClosedGOPIndicator</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02060000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Closed GOP Indicator</Name>
+      <Definition>TRUE if all GOPs are started with IDR Picture.</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01040100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCIdenticalGOPIndicator</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02070000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Identical GOP Indicator</Name>
+      <Definition>TRUE if every GOP in the sequence has the same number of pictures and the same types of pictures in  the same order.</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01040100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCMaximumGOPSize</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02080000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Maximum GOP Size</Name>
+      <Definition>Specifies the maximum occurring spacing between I Pictures</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010200.00000000</Type>
+      <ValueLength>2 bytes</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCMaximumBPictureCount</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02090000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Maximum B-Picture Count</Name>
+      <Definition>Specifies the maximum number of B Pictures between P or I Pictures</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010200.00000000</Type>
+      <ValueLength>2 bytes</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCProfile</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020a0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Profile</Name>
+      <Definition>Specifies the HEVC video profile</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCMaximumBitRate</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020b0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Maximum Bit Rate</Name>
+      <Definition>Maximum bit rate of the HEVC stream in bit/s</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
+      <ValueLength>4 bytes</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCProfileConstraint</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020c0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Profile Constraint</Name>
+      <Definition>Specifies the HEVC video profile constraint flags</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010200.00000000</Type>
+      <ValueLength>2 bytes</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCLevel</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020d0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Level</Name>
+      <Definition>Specifies the HEVC level</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCDecodingDelay</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020e0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Decoding Delay</Name>
+      <Definition>Specifies the delay required for decoded pictures in number of access units</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCMaximumRefFrames</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.020f0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Maximum Ref Frames</Name>
+      <Definition>Specifies the maximum number of reference frames</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCSequenceParameterSetFlag</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02100000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Sequence Parameter Set Flag</Name>
+      <Definition>Specifies the location and the constancy of sequence parameter sets</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCPictureParameterSetFlag</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02110000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Picture Parameter Set Flag</Name>
+      <Definition>Specifies the location and the constancy of picture parameter sets</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTier</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02120000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tier</Name>
+      <Definition>Specifies the HEVC tier</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCVideoParameterSetFlag</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02130000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Video Parameter Set Flag</Name>
+      <Definition>Specifies the location and the constancy of video parameter sets</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCAverageBitRate</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02140000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Average Bit Rate</Name>
+      <Definition>Average bit rate of the HEVC stream in bit/s</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010300.00000000</Type>
+      <ValueLength>4 bytes</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCCTUSize</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02150000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC CTU Size</Name>
+      <Definition>Specifies the size of CTU</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTileUniformSpacingFlag</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02160000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tile Uniform Spacing Flag</Name>
+      <Definition>TRUE if tile column boundaries and tile row boundaries are distributed uniformly</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01040100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTileColumnsMinus1</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02170000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tile Columns Minus 1</Name>
+      <Definition>Specifies the number of tile columns minus 1</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTileRowsMinus1</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02180000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tile Rows Minus 1</Name>
+      <Definition>Specifies the number of tile rows minus 1</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTileWidthMinus1</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.02190000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tile Width Minus 1</Name>
+      <Definition>Specifies the width minus 1 of tiles in units of CTBs</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.04011200.00000000</Type>
+      <ValueLength>variable</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCTileHeightMinus1</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.021a0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Tile Height Minus 1</Name>
+      <Definition>Specifies the height minus 1 of tiles in units of CTBs</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.04011200.00000000</Type>
+      <ValueLength>variable</ValueLength>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012</NamespaceName>
+      <Symbol>HEVCNumberOfPPSs</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.04010606.021b0000</UL>
+      <Kind>LEAF</Kind>
+      <Name>HEVC Number of PPSs</Name>
+      <Definition>Spefifies the maximum number of picture parameter sets that have different pps_pic_parameter_set_id in each GOP</Definition>
+      <DefiningDocument>SMPTE ST 381-5</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <ContextScope>UnknownContext</ContextScope>
+      <Type>urn:smpte:ul:060e2b34.01040101.01010100.00000000</Type>
+      <ValueLength>1 byte</ValueLength>
     </Entry>
     <Entry>
       <Register>Elements</Register>
@@ -30037,6 +30330,18 @@
       <IsDeprecated>false</IsDeprecated>
       <ContextScope>UnknownContext</ContextScope>
       <Type>urn:smpte:ul:060e2b34.01040101.01100200.00000000</Type>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012/13/1/aaf</NamespaceName>
+      <Symbol>MXFGenericStreamDataElementKey</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010c.0d010500.00000000</UL>
+      <Kind>NODE</Kind>
+      <Name>MXF Generic Stream Data Element Key</Name>
+      <Definition>Default key used for the Generic Stream Payload in a MXF Generic Stream Partition</Definition>
+      <Notes>The keys used in implementations are Leaves within this node where Bytes 12 and 13 are set according to SMPTE ST 410 (revision 2008) Table 3</Notes>
+      <DefiningDocument>SMPTE ST 410</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
     </Entry>
     <Entry>
       <Register>Elements</Register>
@@ -46323,6 +46628,16 @@
       <Kind>NODE</Kind>
       <Name>Apple Inc.</Name>
       <Definition>Metadata registered by Apple Inc. for private use</Definition>
+      <IsDeprecated>false</IsDeprecated>
+    </Entry>
+    <Entry>
+      <Register>Elements</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/335/2012/14/33</NamespaceName>
+      <Symbol>Fraunhofer</Symbol>
+      <UL>urn:smpte:ul:060e2b34.0101010e.0e210000.00000000</UL>
+      <Kind>NODE</Kind>
+      <Name>Fraunhofer</Name>
+      <Definition>Metadata registered by Fraunhofer for private use</Definition>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
     <Entry>
